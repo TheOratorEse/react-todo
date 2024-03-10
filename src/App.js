@@ -10,8 +10,10 @@ function App() {
 
   // Add a new task
   const addTask = (title) => {
-    setTasks([...tasks, { title, completed: false }]);
+    const newId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15); // Generate unique ID
+    setTasks([...tasks, { title, completed: false, id: newId }]); // Add ID to the new task object
   };
+  
 
   // Mark a task as completed
   const completeTask = (id) => {
