@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Todo List</h1>
+      <h1>Todo App</h1>
       <TodoForm addTask={addTask} />
       <TodoList tasks={filteredTasks} completeTask={completeTask} deleteTask={deleteTask} />
       <div>
